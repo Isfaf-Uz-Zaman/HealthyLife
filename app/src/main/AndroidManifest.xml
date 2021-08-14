@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeHealthyLifestyle">
+        <activity android:name=".Day15"></activity>
+        <activity android:name=".Day8ToDay14" />
+        <activity android:name=".Day1ToDay7" />
+        <activity android:name=".LoseWeightPlan" />
+        <activity android:name=".DietChartMainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

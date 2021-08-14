@@ -5,27 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class DietChartMainActivity extends AppCompatActivity {
 
-    private ImageView dietChartButton;
+    private Button loseWeight;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_diet_chart_main);
 
-        dietChartButton = (ImageView) findViewById(R.id.dietChartButtonID);
+        loseWeight = (Button) findViewById(R.id.button_lose_weight);
 
-
-        dietChartButton.setOnClickListener(new View.OnClickListener() {
+        loseWeight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this,DietChartMainActivity.class);
+                Intent intent = new Intent(DietChartMainActivity.this, LoseWeightPlan.class);
                 startActivity(intent);
-
             }
         });
     }
