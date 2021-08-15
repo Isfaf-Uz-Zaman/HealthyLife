@@ -8,6 +8,11 @@
     android:gravity="center"
     tools:context=".PedoMeter">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:src="@drawable/stepsimage"/>
+
     <TextView
         android:id="@+id/stepId"
         android:layout_width="wrap_content"
