@@ -197,6 +197,7 @@
                     <ImageView
                         android:src="@drawable/pedometer"
                         android:layout_width="80dp"
+                        android:id="@+id/pedoMeterId"
                         android:layout_height="80dp"
                         />
                     <TextView
@@ -204,6 +205,7 @@
                         android:layout_height="wrap_content"
                         android:text="Pedometer"
                         android:textStyle="bold"
+                        android:id="@+id/pd"
                         android:textSize="20dp"/>
 
                 </LinearLayout>
