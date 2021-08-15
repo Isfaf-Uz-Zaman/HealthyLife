@@ -103,6 +103,7 @@
                         android:src="@drawable/store"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:id="@+id/dietStoreButtonID"
                         />
                     <TextView
                         android:layout_width="wrap_content"
