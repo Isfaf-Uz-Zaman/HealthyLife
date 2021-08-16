@@ -16,16 +16,29 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class DietStore extends AppCompatActivity {
     private ListView listView;
-    private int apple=0;
-    private int chia=0;
-    private int coffee=0;
-    private int egg=0;
+    private int apple=0,appleCheckout;
+    private int chia=0,chiaCheckout;
+    private int coffee=0,coffeeCheckout;
+    private int egg=0,eggCheckout;
     private Intent intent;
     Button appleCiderAddtoCart;
-    Button chiaSeedAddToCart;
     Button appleCiderRemoveCart;
-    Button chiaSeedRemoveCart;
     TextView appleCiderAmountInTextView;
+
+    Button chiaSeedAddToCart;
+    Button chiaSeedRemoveCart;
+    TextView chiaSeedAmountInTextView;
+
+    Button eggAddToCart;
+    Button eggRemoveCart;
+    TextView eggAmountInTextView;
+
+    Button coffeeAddToCart;
+    Button coffeeRemoveCart;
+    TextView coffeeAmountInTextView;
+
+
+
     FloatingActionButton checkOutButton;
 
 
@@ -37,10 +50,27 @@ public class DietStore extends AppCompatActivity {
         setContentView(R.layout.activity_diet_store);
 
         appleCiderAddtoCart = (Button) findViewById(R.id.appleciderIncrement);
-        appleCiderAmountInTextView = (TextView) findViewById(R.id.appleciderAdded);
-        chiaSeedAddToCart = (Button) findViewById(R.id.chiaSeedIncrement);
         appleCiderRemoveCart = (Button) findViewById(R.id.appleciderDecrement);
+        appleCiderAmountInTextView = (TextView) findViewById(R.id.appleciderAdded);
+
+
+        chiaSeedAddToCart = (Button) findViewById(R.id.chiaSeedIncrement);
         chiaSeedRemoveCart = (Button) findViewById(R.id.chiaSeedDecrement);
+        chiaSeedAmountInTextView= (TextView) findViewById(R.id.chiaSeedAdded);
+
+        chiaSeedAddToCart = (Button) findViewById(R.id.chiaSeedIncrement);
+        chiaSeedRemoveCart = (Button) findViewById(R.id.chiaSeedDecrement);
+        chiaSeedAmountInTextView= (TextView) findViewById(R.id.chiaSeedAdded);
+
+        eggAddToCart = (Button) findViewById(R.id.eggIncrement);
+        eggRemoveCart = (Button) findViewById(R.id.eggDecrement);
+        eggAmountInTextView= (TextView) findViewById(R.id.eggAdded);
+
+
+        coffeeAddToCart = (Button) findViewById(R.id.coffeeIncrement);
+        coffeeRemoveCart = (Button) findViewById(R.id.coffeeDecrement);
+        coffeeAmountInTextView= (TextView) findViewById(R.id.coffeeAdded);
+
         checkOutButton = (FloatingActionButton) findViewById(R.id.checkOut);
 
 
@@ -68,14 +98,102 @@ public class DietStore extends AppCompatActivity {
             }
         });
 
-        checkOutButton.setOnClickListener(new View.OnClickListener() {
+
+
+        chiaSeedAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(DietStore.this,"You are buying "+apple+" Apples",Toast.LENGTH_LONG).show();
+                chia++;
+                chiaSeedAmountInTextView.setText("" +chia);
+            }
+
+        });
+        chiaSeedRemoveCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(chia!=0)
+                {
+                    chia--;
+                    chiaSeedAmountInTextView.setText("" +chia);
+                }
+                else
+                {
+                    Toast.makeText(DietStore.this,"You did not add any chia seed yet",Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+
+        eggAddToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                egg++;
+                eggAmountInTextView.setText("" +egg);
+            }
+
+        });
+        eggRemoveCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(egg!=0)
+                {
+                    egg--;
+                    eggAmountInTextView.setText("" +egg);
+                }
+                else
+                {
+                    Toast.makeText(DietStore.this,"You did not add egg yet",Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        coffeeAddToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                coffee++;
+                coffeeAmountInTextView.setText("" +coffee);
+            }
+
+        });
+        coffeeRemoveCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(coffee!=0)
+                {
+                    coffee--;
+                    coffeeAmountInTextView.setText("" +coffee);
+                }
+                else
+                {
+                    Toast.makeText(DietStore.this,"You did not add any coffee yet",Toast.LENGTH_LONG).show();
+                }
             }
         });
 
 
 
+
+        checkOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(DietStore.this,CheckoutPage.class);
+                intent.putExtra("APPLE",""+apple);
+                intent.putExtra("CHIA",""+chia);
+                intent.putExtra("COFFEE",""+coffee);
+                intent.putExtra("EGG",""+egg);
+                startActivity(intent);
+
+
+            }
+        });
+
+
+
+
+
+
     }
+
 }
