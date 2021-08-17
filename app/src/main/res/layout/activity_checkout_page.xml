@@ -16,22 +16,18 @@
 
         android:gravity="center"
         android:text="555651"
-
-        tools:ignore="MissingConstraints"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
         tools:layout_editor_absoluteX="44dp"
         tools:layout_editor_absoluteY="61dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/confirmButtonID"
         android:layout_width="match_parent"
-        android:layout_height="89dp"
-        android:gravity="bottom"
-        android:paddingBottom="5555dp"
-        android:text="Confirm"
-        android:textAlignment="gravity"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="586dp" />
+        android:layout_height="85dp"
+        android:text="CONFIRM"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>

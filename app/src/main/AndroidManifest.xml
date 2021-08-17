@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeHealthyLifestyle">
-        <activity android:name=".CheckoutPage"></activity>
+        <activity android:name=".DeliveryDetrails"></activity>
+        <activity android:name=".ThankYouForOrdering" />
+        <activity android:name=".CheckoutPage" />
         <activity android:name=".checkout_page" />
         <activity android:name=".Sample_View" />
         <activity android:name=".DietStore" />
