@@ -46,7 +46,6 @@ public class PedoMeter extends AppCompatActivity implements SensorEventListener 
     public void onSensorChanged(SensorEvent sensorEvent) {
     if(running){
         stepCount.setText(String.valueOf(sensorEvent.values[0]));
-
         }
     }
 
