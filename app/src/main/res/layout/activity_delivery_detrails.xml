@@ -8,19 +8,19 @@
     tools:context=".DeliveryDetrails">
 
 
-    <TextView
+    <EditText
         android:id="@+id/customerNameID"
-        android:layout_width="322dp"
+        android:layout_width="match_parent"
         android:layout_height="87dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Name"
+        android:inputType="textPersonName"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="94dp" />
 
     <EditText
         android:id="@+id/customerAddressID"
-        android:layout_width="323dp"
+        android:layout_width="match_parent"
         android:layout_height="91dp"
         android:ems="10"
         android:hint="ADDRESS"
@@ -31,10 +31,10 @@
 
     <EditText
         android:id="@+id/customerPhoneID"
-        android:hint="Phone Number"
-        android:layout_width="322dp"
+        android:layout_width="match_parent"
         android:layout_height="68dp"
         android:ems="10"
+        android:hint="Phone Number"
         android:inputType="phone"
         tools:layout_editor_absoluteX="55dp"
         tools:layout_editor_absoluteY="327dp" />
@@ -43,6 +43,7 @@
         android:id="@+id/cutomerOrderDoneButtonID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="DONE"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="503dp" />
