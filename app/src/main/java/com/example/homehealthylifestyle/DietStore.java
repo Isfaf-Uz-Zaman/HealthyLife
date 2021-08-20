@@ -5,23 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class DietStore extends AppCompatActivity {
-    private ListView listView;
-    private int apple=0,appleCheckout;
-    private int chia=0,chiaCheckout;
-    private int coffee=0,coffeeCheckout;
-    private int egg=0,eggCheckout;
-    private Intent intent;
-    Button appleCiderAddtoCart;
+    private int apple=0;
+    private int chia=0;
+    private int coffee=0;
+    private int egg=0;
+    private int totalBill=0;
+    Button appleCiderAddCart;
     Button appleCiderRemoveCart;
     TextView appleCiderAmountInTextView;
 
@@ -49,7 +45,7 @@ public class DietStore extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diet_store);
 
-        appleCiderAddtoCart = (Button) findViewById(R.id.appleciderIncrement);
+        appleCiderAddCart = (Button) findViewById(R.id.appleciderIncrement);
         appleCiderRemoveCart = (Button) findViewById(R.id.appleciderDecrement);
         appleCiderAmountInTextView = (TextView) findViewById(R.id.appleciderAdded);
 
@@ -75,7 +71,7 @@ public class DietStore extends AppCompatActivity {
 
 
 
-        appleCiderAddtoCart.setOnClickListener(new View.OnClickListener() {
+        appleCiderAddCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 apple++;
@@ -155,6 +151,8 @@ public class DietStore extends AppCompatActivity {
             }
 
         });
+
+
         coffeeRemoveCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -177,12 +175,15 @@ public class DietStore extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                totalBill = (apple*850)+(chia*180)+(egg*100)+(coffee*570);
+
 
                 Intent intent = new Intent(DietStore.this,CheckoutPage.class);
                 intent.putExtra("APPLE",""+apple);
                 intent.putExtra("CHIA",""+chia);
                 intent.putExtra("COFFEE",""+coffee);
                 intent.putExtra("EGG",""+egg);
+                intent.putExtra("TOTAL",""+totalBill);
                 startActivity(intent);
 
 

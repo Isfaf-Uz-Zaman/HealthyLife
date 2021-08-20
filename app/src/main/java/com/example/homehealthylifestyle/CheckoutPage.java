@@ -28,8 +28,9 @@ public class CheckoutPage extends AppCompatActivity {
             String userPurchasedChiaSeed = bundle.getString("CHIA");
             String userPurchasedCoffee = bundle.getString("COFFEE");
             String userPurchasedEgg = bundle.getString("EGG");
+            String userTotalBill = bundle.getString("TOTAL");
 
-            totalOrder = "You have selected\nApple Cider" +userPurchasedAppleCider+ "\nChia seed" +userPurchasedChiaSeed+ "\nCoffee" +userPurchasedCoffee+ "\nEgg" +userPurchasedEgg;
+            totalOrder = "You have selected\nApple Cider" +userPurchasedAppleCider+ "\nChia seed" +userPurchasedChiaSeed+ "\nCoffee" +userPurchasedCoffee+ "\nEgg" +userPurchasedEgg+ "\n\n\nTotal Bill = " +userTotalBill;
 
 
             orderConfirm.setText(totalOrder);
