@@ -37,9 +37,10 @@ public class DeliveryDetrails extends AppCompatActivity {
         orderDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SaveData();
+                saveData();
 
             }
+
 
 
         });
@@ -52,13 +53,15 @@ public class DeliveryDetrails extends AppCompatActivity {
     *This method is used to store data in firebase
     *
     * */
+    
 
 
-    private void SaveData() {
+    private void saveData() {
 
         String name = customerName.getText().toString().trim();
         String address = customerAddress.getText().toString().trim();
         String phone = customerPhone.getText().toString().trim();
+        String order= youHaveOrdered;
 
 
     }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BmiIndex">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="350dp"
+        android:layout_height="69dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI INDEX"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diet plan to lose weight"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="483dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="287dp"
+        android:layout_height="79dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:text="recomandation"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="325dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

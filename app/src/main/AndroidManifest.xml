@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeHealthyLifestyle">
-        <activity android:name=".DeliveryDetrails"></activity>
+        <activity android:name=".BmiIndex"></activity>
+        <activity android:name=".BmiCalculator" />
+        <activity android:name=".DeliveryDetrails" />
         <activity android:name=".ThankYouForOrdering" />
         <activity android:name=".CheckoutPage" />
         <activity android:name=".checkout_page" />
