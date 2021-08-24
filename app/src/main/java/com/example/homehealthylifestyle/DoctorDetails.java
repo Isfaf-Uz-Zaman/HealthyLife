@@ -12,9 +12,9 @@ public class DoctorDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_details);
-        imageView = (ImageView) findViewById(R.id.profile_pic);
-        textView = (TextView) findViewById(R.id.personName);
-        textView2 = (TextView) findViewById(R.id.lastMessage);
+        imageView = (ImageView) findViewById(R.id.profile_pic1);
+        textView = (TextView) findViewById(R.id.personName1);
+        textView2 = (TextView) findViewById(R.id.specialty1);
 
     }
 }
