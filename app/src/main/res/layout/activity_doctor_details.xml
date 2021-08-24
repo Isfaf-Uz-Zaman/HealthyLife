@@ -63,6 +63,7 @@
                     android:layout_height="wrap_content"
                     android:text="Phone: +8801999900000"
                     android:autoLink="phone"
+                    android:textColorLink="#4053BA"
                     android:textColor="@color/black"
                     />
                 <TextView
@@ -70,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:text="Email: dr.fillmore@gmail.com"
                     android:autoLink="email"
+                    android:textColorLink="#4053BA"
                     android:textColor="@color/black"/>
 
             </LinearLayout>
@@ -130,12 +132,14 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:text="Phone: +8801999900000"
+                    android:textColorLink="#4053BA"
                     android:autoLink="phone"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Email: dr.christopher@gmail.com"
                     android:autoLink="email"/>
 
@@ -197,6 +201,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Phone: +8801999900000"
                     android:autoLink="phone"
                     />
@@ -204,6 +209,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Email: ken.hurt@gmail.com"
                     android:autoLink="email"/>
 
@@ -265,6 +271,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Phone: +8801999900000"
                     android:autoLink="phone"
                     />
@@ -272,6 +279,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Email: dr.lynch@gmail.com"
                     android:autoLink="email"/>
 
@@ -333,6 +341,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Phone: +8801999900000"
                     android:autoLink="phone"
                     />
@@ -340,6 +349,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Email: kira.knisley@gmail.com"
                     android:autoLink="email"/>
 
@@ -401,6 +411,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Phone: +8801999900000"
                     android:autoLink="phone"
                     />
@@ -408,6 +419,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Email: michael.leabow@gmail.com"
                     android:autoLink="email"/>
 
@@ -450,7 +462,7 @@
                     android:id="@+id/personName7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Jeffrey Gallishaw"
+                    android:text="Dr. Jeffrey Shaw"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"/>
@@ -468,6 +480,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
+                    android:textColorLink="#4053BA"
                     android:text="Phone: +8801999900000"
                     android:autoLink="phone"
                     />
@@ -475,7 +488,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="Email: jeffrey.gallishaw@gmail.com"
+                    android:textColorLink="#4053BA"
+                    android:text="Email: jeffrey.shaw@gmail.com"
                     android:autoLink="email"/>
 
             </LinearLayout>
