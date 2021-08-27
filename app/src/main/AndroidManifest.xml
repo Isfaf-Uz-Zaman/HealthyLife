@@ -14,8 +14,6 @@
         <activity android:name=".DeliveryDetrails" />
         <activity android:name=".ThankYouForOrdering" />
         <activity android:name=".CheckoutPage" />
-        <activity android:name=".checkout_page" />
-        <activity android:name=".Sample_View" />
         <activity android:name=".DietStore" />
         <activity android:name=".Day15" />
         <activity android:name=".Day8ToDay14" />
