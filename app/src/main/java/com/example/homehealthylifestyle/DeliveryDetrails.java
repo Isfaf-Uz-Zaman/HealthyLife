@@ -3,6 +3,7 @@ package com.example.homehealthylifestyle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -89,6 +90,9 @@ public class DeliveryDetrails extends AppCompatActivity{
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(DeliveryDetrails.this,"Successful",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(DeliveryDetrails.this,ThankYouForOrdering.class);
+                        startActivity(intent);
+
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
