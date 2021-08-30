@@ -31,7 +31,7 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:src="@drawable/doctor1" />
+                android:src="@drawable/drwakilahmed" />
 
 
             <LinearLayout
@@ -45,23 +45,22 @@
                     android:id="@+id/personName1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Fillmore"
+                    android:text="Dr. Wakil Ahmed"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/specialty1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Allergy And Immunology specialist"
+                    android:text="Orthopedic Surgery (Arthroscopy, Joint Replacement)"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Phone: +8801999900000"
+                    android:text="Phone: +8809610010615"
                     android:autoLink="phone"
                     android:textColorLink="#4053BA"
                     android:textColor="@color/black"
@@ -69,7 +68,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Email: dr.fillmore@gmail.com"
+                    android:text="Email: dr.wakil@gmail.com"
                     android:autoLink="email"
                     android:textColorLink="#4053BA"
                     android:textColor="@color/black"/>
@@ -99,7 +98,7 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:src="@drawable/doctor2"/>
+                android:src="@drawable/drjahangirkabir"/>
 
 
             <LinearLayout
@@ -113,25 +112,24 @@
                     android:id="@+id/personName2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Christopher"
+                    android:text="Dr. Jahangir Kabir"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/specialty2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:textSize="15sp"
                     android:textColor="@color/black"
-                    android:text="Dentist"/>
+                    android:text="Nutritionist"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="Phone: +8801999900000"
+                    android:text="Phone: +8801319405418"
                     android:textColorLink="#4053BA"
                     android:autoLink="phone"
                     />
@@ -140,7 +138,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textColorLink="#4053BA"
-                    android:text="Email: dr.christopher@gmail.com"
+                    android:text="Email: 	zubayereee@gmail.com"
                     android:autoLink="email"/>
 
             </LinearLayout>
@@ -169,7 +167,7 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:src="@drawable/doctor3"/>
+                android:src="@drawable/drjasmineakhter"/>
 
 
             <LinearLayout
@@ -183,9 +181,9 @@
                     android:id="@+id/personName3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Ken Hurt"
+                    android:text="Dr. Jasmine Akhter"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"/>
 
                 <TextView
@@ -193,16 +191,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:layout_marginTop="5dp"
                     android:textSize="15sp"
-                    android:text="Heart Disease Specialist"/>
+                    android:text="Gynaecologist"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textColorLink="#4053BA"
-                    android:text="Phone: +8801999900000"
+                    android:text="Phone: +8809610010615"
                     android:autoLink="phone"
                     />
                 <TextView
@@ -210,7 +207,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textColorLink="#4053BA"
-                    android:text="Email: ken.hurt@gmail.com"
+                    android:text="Email: dr.jasmin@gmail.com"
                     android:autoLink="email"/>
 
             </LinearLayout>
@@ -239,7 +236,7 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:src="@drawable/doctor5"/>
+                android:src="@drawable/drzehadkhan"/>
 
 
             <LinearLayout
@@ -253,26 +250,25 @@
                     android:id="@+id/personName4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Lynch"
+                    android:text="Prof.Dr.Zehad Khan"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/specialty4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:textSize="15sp"
                     android:textColor="@color/black"
-                    android:text="Neurologist"/>
+                    android:text="Cardiologist and Medicine Specialist"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textColorLink="#4053BA"
-                    android:text="Phone: +8801999900000"
+                    android:text="Phone: +8809610010615"
                     android:autoLink="phone"
                     />
                 <TextView
@@ -280,7 +276,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textColorLink="#4053BA"
-                    android:text="Email: dr.lynch@gmail.com"
+                    android:text="Email: dr.zehad@gmail.com"
                     android:autoLink="email"/>
 
             </LinearLayout>
@@ -309,7 +305,7 @@
                 android:layout_height="100dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:src="@drawable/doctor8"/>
+                android:src="@drawable/drmohammadferdouskhan"/>
 
 
             <LinearLayout
@@ -323,26 +319,25 @@
                     android:id="@+id/personName5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. Kira Knisley"
+                    android:text="Dr. Mohammad Ferdous Khan"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/specialty5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:textSize="15sp"
                     android:textColor="@color/black"
-                    android:text="Bone specialist"/>
+                    android:text="Medicine, Diabetes and Cardiology"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textColorLink="#4053BA"
-                    android:text="Phone: +8801999900000"
+                    android:text="Phone: +8809610010615"
                     android:autoLink="phone"
                     />
                 <TextView
@@ -350,7 +345,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textColorLink="#4053BA"
-                    android:text="Email: kira.knisley@gmail.com"
+                    android:text="Email: dr.ferdous@gmail.com"
                     android:autoLink="email"/>
 
             </LinearLayout>
@@ -362,142 +357,6 @@
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:orientation="horizontal">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_pic6"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:src="@drawable/doctor6"/>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/personName6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dr. Michael Leabow"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/specialty6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:text="Rheumatologist"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textColorLink="#4053BA"
-                    android:text="Phone: +8801999900000"
-                    android:autoLink="phone"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textColorLink="#4053BA"
-                    android:text="Email: michael.leabow@gmail.com"
-                    android:autoLink="email"/>
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-
-
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:orientation="horizontal">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_pic7"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:src="@drawable/doctor4"/>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/personName7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dr. Jeffrey Shaw"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:id="@+id/specialty7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:text="Medicine specialist"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textColorLink="#4053BA"
-                    android:text="Phone: +8801999900000"
-                    android:autoLink="phone"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textColorLink="#4053BA"
-                    android:text="Email: jeffrey.shaw@gmail.com"
-                    android:autoLink="email"/>
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-    </RelativeLayout>
 
   </LinearLayout>
 
