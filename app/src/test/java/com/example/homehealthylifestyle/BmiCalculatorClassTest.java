@@ -11,7 +11,7 @@ public class BmiCalculatorClassTest {
     public void TestCase1() {
         float inputWeight= 82,inputHeight =182;
         float output;
-        float expected = (float) 24.72;
+        float expected = (float) 24.73;
         double delta = .1;
         BmiCalculatorClass bmiCalculatorClass = new BmiCalculatorClass();
         output = bmiCalculatorClass.calculateUseBMI(inputHeight,inputWeight);
