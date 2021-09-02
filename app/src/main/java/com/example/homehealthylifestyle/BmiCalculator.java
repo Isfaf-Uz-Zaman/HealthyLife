@@ -73,13 +73,21 @@ public class BmiCalculator extends AppCompatActivity {
 
         float calculatedBMI = wightValue/(heightValue * heightValue);
 
-        if(calculatedBMI<16)
+        if(calculatedBMI<0)
         {
             yourBmiIs.setText("Your BMI is="+calculatedBMI);
-            tipsForUser.setText("You are very much Underweight");
+            tipsForUser.setText("Invalid");
 
             Toast.makeText(BmiCalculator.this," with BMI="+calculatedBMI,Toast.LENGTH_LONG).show();
-        }else if(calculatedBMI<18.4)
+        }
+        else if(calculatedBMI<16)
+        {
+            yourBmiIs.setText("Your BMI is="+calculatedBMI);
+            tipsForUser.setText("You are too much Underweight");
+
+            Toast.makeText(BmiCalculator.this," with BMI="+calculatedBMI,Toast.LENGTH_LONG).show();
+        }
+        else if(calculatedBMI<18.4)
         {
             yourBmiIs.setText("Your BMI is="+calculatedBMI);
             tipsForUser.setText("You are a bit Underweight");
@@ -89,7 +97,7 @@ public class BmiCalculator extends AppCompatActivity {
             yourBmiIs.setText("Your BMI is="+calculatedBMI);
             tipsForUser.setText("You are in perfect shape");
             Toast.makeText(BmiCalculator.this,"You are in perfect weight with BMI="+calculatedBMI,Toast.LENGTH_LONG).show();
-        }else if(calculatedBMI>=25 && calculatedBMI<= 29.9)
+        }else if(calculatedBMI>=25.0 && calculatedBMI<= 40.0)
         {
             yourBmiIs.setText("Your BMI is="+calculatedBMI);
             tipsForUser.setText("You are overweight.Please check the diet plan to lose weight");
@@ -97,7 +105,7 @@ public class BmiCalculator extends AppCompatActivity {
         }else
         {
             yourBmiIs.setText("Your BMI is="+calculatedBMI);
-            tipsForUser.setText("You are in critical condition Please visit a doctor");
+            tipsForUser.setText("You are too much overweight.");
             Toast.makeText(BmiCalculator.this,"You are obese with BMI="+calculatedBMI,Toast.LENGTH_LONG).show();
         }
 

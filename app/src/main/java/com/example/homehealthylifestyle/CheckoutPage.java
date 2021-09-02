@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import Model.DeliveryDetrails;
+
 public class CheckoutPage extends AppCompatActivity {
 
     private TextView orderConfirm;
@@ -39,7 +41,7 @@ public class CheckoutPage extends AppCompatActivity {
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(CheckoutPage.this,DeliveryDetrails.class);
+                Intent i = new Intent(CheckoutPage.this, DeliveryDetrails.class);
                 i.putExtra("Order",totalOrder);
                 startActivity(i);
 

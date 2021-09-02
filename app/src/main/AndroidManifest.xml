@@ -11,7 +11,7 @@
         android:theme="@style/Theme.HomeHealthyLifestyle">
         <activity android:name=".BmiIndex"></activity>
         <activity android:name=".BmiCalculator" />
-        <activity android:name=".DeliveryDetrails" />
+        <activity android:name="Model.DeliveryDetrails" />
         <activity android:name=".ThankYouForOrdering" />
         <activity android:name=".CheckoutPage" />
         <activity android:name=".DietStore" />
