@@ -1,24 +1,10 @@
 <resources>
-    <string name="app_name">HomeHealthyLifestyle</string>
-    <string name="doctor_details">Doctor \n Details</string>
-    <string-array name="product_names">
-        <item>Apple Cider Vinegar</item>
-        <item>Chia Seed</item>
-        <item>Nescafe</item>
-        <item>Egg</item>
-        <item>Checkout</item>
-
-
-    </string-array>
-
-
-    <string-array name="product_details">
-        <item>790Taka</item>
-        <item>150TK</item>
-        <item>250TK</item>
-        <item>100TK/Dozen</item>
-        <item>Checkout</item>
-
-
-    </string-array>
+    <string name="app_name">MyLoginDemo</string>
+    <string name="Username">Username</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="go">Go</string>
+    <string name="simply_sign_up">Simply SIGN UP</string>
+    <string name="and">and</string>
+    <string name="join_with_us_today">Join with us today!</string>
 </resources>

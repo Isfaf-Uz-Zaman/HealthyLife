@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.homehealthylifestyle">
+    package="com.example.mylogindemo">
 
     <application
         android:allowBackup="true"
@@ -8,18 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HomeHealthyLifestyle">
-        <activity android:name=".PedoMeter" />
-        <activity android:name=".DoctorDetails" />
-        <activity android:name=".BmiCalculator" />
-        <activity android:name=".DeliveryDetrails" />
-        <activity android:name=".ThankYouForOrdering" />
-        <activity android:name=".CheckoutPage" />
-        <activity android:name=".DietStore" />
-        <activity android:name=".Day15" />
-        <activity android:name=".Day8ToDay14" />
-        <activity android:name=".Day1ToDay7" />
-        <activity android:name=".LoseWeightPlan" />
+        android:theme="@style/Theme.MyLoginDemo">
+        <activity android:name=".SecondActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
