@@ -11,17 +11,37 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * This class represents the BMI calculation.
+ *  @author Isfaf Uz Zaman,CSE327 project documentation
+ */
+
 public class BmiCalculator extends AppCompatActivity {
+    /**
+     * This is a button for checking BMI.
+     */
 
     private Button checkBmi;
-    private EditText userWeight;
-    private EditText userHeight;
+    /**
+     * This is a edit text which will take height and weight from user.
+     */
+    private EditText userWeight,userHeight;
+
+    /**
+     * This is a text view which will give result based on BMI.
+     */
     public TextView yourBmiIs,tipsForUser;
+    /**
+     * This is a button for redirecting to lose weight diet plan.
+     */
     public Button checkTheLoseWeightPlan;
 
-
+    /**
+     * This method is used for making connection between front end and back end.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi_calculator);
 
@@ -34,6 +54,9 @@ public class BmiCalculator extends AppCompatActivity {
 
 
         checkTheLoseWeightPlan.setOnClickListener(new View.OnClickListener() {
+            /**
+             * This is an onclick listener which will redirect user to lose wight diet plan page.
+             */
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BmiCalculator.this,LoseWeightPlan.class);
@@ -43,6 +66,9 @@ public class BmiCalculator extends AppCompatActivity {
 
 
         checkBmi.setOnClickListener(new View.OnClickListener() {
+            /**
+             * This button will generate the BMI
+             */
             @Override
             public void onClick(View v) {
                 if(TextUtils.isEmpty(userWeight.getText().toString()))
@@ -60,9 +86,11 @@ public class BmiCalculator extends AppCompatActivity {
         });
 
     }
+    /**
+     * This method will do the calculation of BMi and set the text based on that.
+     */
 
     private void calculateUseBMI() {
-
 
         String userProvidedWeight = userWeight.getText().toString().trim();
         String userProvidedHeight = userHeight.getText().toString().trim();

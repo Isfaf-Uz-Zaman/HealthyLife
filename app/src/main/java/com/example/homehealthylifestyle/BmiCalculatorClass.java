@@ -1,8 +1,17 @@
 package com.example.homehealthylifestyle;
 
 import android.widget.Toast;
-
+/**
+ * This class represents the BMI calculation cases.
+ *  @author Isfaf Uz Zaman,CSE327 project documentation
+ */
 public class BmiCalculatorClass {
+    /**
+     * This method will take height and weight and calculate Bmi.
+     * @param userProvidedHeight this is the user provided height.
+     * @param userProvidedWeight this is the user provided weight.
+     * @return returns the calculated BMI.
+     */
 
 
     public float calculateUseBMI(float userProvidedHeight ,float userProvidedWeight){

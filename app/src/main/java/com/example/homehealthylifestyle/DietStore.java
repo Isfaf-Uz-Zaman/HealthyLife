@@ -10,35 +10,33 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
+/**
+ * This class represents diet store business logic.
+ *  @author Isfaf Uz Zaman,CSE327 project documentation
+ */
 public class DietStore extends AppCompatActivity {
-    private int apple=0;
-    private int chia=0;
-    private int coffee=0;
-    private int egg=0;
-    private int totalBill=0;
-    Button appleCiderAddCart;
-    Button appleCiderRemoveCart;
-    TextView appleCiderAmountInTextView;
-
-    Button chiaSeedAddToCart;
-    Button chiaSeedRemoveCart;
-    TextView chiaSeedAmountInTextView;
-
-    Button eggAddToCart;
-    Button eggRemoveCart;
-    TextView eggAmountInTextView;
-
-    Button coffeeAddToCart;
-    Button coffeeRemoveCart;
-    TextView coffeeAmountInTextView;
+    /**
+     * These variables  are used to count the users input in cart and generate the total bill and saves in another variable.
+     */
+    private int apple=0,chia=0,coffee=0,egg=0,totalBill=0;
+    /**
+     * These buttons are used to get inputs from user while they are in the shopping cart
+     */
+    Button appleCiderAddCart,appleCiderRemoveCart,chiaSeedAddToCart,chiaSeedRemoveCart,eggAddToCart,eggRemoveCart,coffeeAddToCart,coffeeRemoveCart;
+    /**
+     * These textview are used to set the value which the user added in each product
+     */
+    TextView appleCiderAmountInTextView,coffeeAmountInTextView,eggAmountInTextView,chiaSeedAmountInTextView;
 
 
-
+    /**
+     * This is a floating checkout button sitiing at the bottom in product page
+     */
     FloatingActionButton checkOutButton;
 
-
-
+    /**
+     * This method is used for making connection between front end and back end.
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +70,9 @@ public class DietStore extends AppCompatActivity {
 
 
         appleCiderAddCart.setOnClickListener(new View.OnClickListener() {
+            /**
+             * This is an onclick listener which will add one product every time user clicks add button and remove one after the user clicks remove button.
+             */
             @Override
             public void onClick(View v) {
                 apple++;
@@ -81,6 +82,8 @@ public class DietStore extends AppCompatActivity {
         });
         appleCiderRemoveCart.setOnClickListener(new View.OnClickListener() {
             @Override
+
+
             public void onClick(View v) {
                 if(apple!=0)
                 {
@@ -98,6 +101,8 @@ public class DietStore extends AppCompatActivity {
 
         chiaSeedAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
+
+
             public void onClick(View v) {
                 chia++;
                 chiaSeedAmountInTextView.setText("" +chia);
@@ -106,6 +111,7 @@ public class DietStore extends AppCompatActivity {
         });
         chiaSeedRemoveCart.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 if(chia!=0)
                 {
@@ -122,6 +128,7 @@ public class DietStore extends AppCompatActivity {
 
         eggAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 egg++;
                 eggAmountInTextView.setText("" +egg);
@@ -130,6 +137,7 @@ public class DietStore extends AppCompatActivity {
         });
         eggRemoveCart.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 if(egg!=0)
                 {
@@ -145,6 +153,7 @@ public class DietStore extends AppCompatActivity {
 
         coffeeAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 coffee++;
                 coffeeAmountInTextView.setText("" +coffee);
@@ -155,6 +164,7 @@ public class DietStore extends AppCompatActivity {
 
         coffeeRemoveCart.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 if(coffee!=0)
                 {
@@ -173,6 +183,7 @@ public class DietStore extends AppCompatActivity {
 
         checkOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
 
                 totalBill = (apple*850)+(chia*180)+(egg*100)+(coffee*570);

@@ -7,11 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LoseWeightPlan extends AppCompatActivity {
-    private Button dayOne;
-    private Button eight;
-    private Button dayFifteen;
+/**
+ * This class represents the buttons for diet chart filtering the days.
+ *  @author Isfaf Uz Zaman,CSE327 project documentation
+ */
 
+public class LoseWeightPlan extends AppCompatActivity {
+    /**
+     * These buttons are used to select the desired days of diet chart user wants
+     */
+
+    private Button dayOne,eight,dayFifteen;
+
+    /**
+     * This method is used for making connection between front end and back end.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +32,10 @@ public class LoseWeightPlan extends AppCompatActivity {
         dayFifteen = (Button) findViewById(R.id.day15);
 
         dayOne.setOnClickListener(new View.OnClickListener() {
+            /**
+             * This method is responsible for transaction between two pages.
+             * @param v this is the View(Built in) class object
+             */
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoseWeightPlan.this,Day1ToDay7.class);
@@ -30,6 +44,10 @@ public class LoseWeightPlan extends AppCompatActivity {
         });
         eight.setOnClickListener(new View.OnClickListener() {
             @Override
+            /**
+             * This method is responsible for transaction between two pages.
+             * @param v this is the View(Built in) class object
+             */
             public void onClick(View v) {
                 Intent intent = new Intent(LoseWeightPlan.this,Day8ToDay14.class);
                 startActivity(intent);
@@ -37,6 +55,10 @@ public class LoseWeightPlan extends AppCompatActivity {
         });
         dayFifteen.setOnClickListener(new View.OnClickListener() {
             @Override
+            /**
+             * This method is responsible for transaction between two pages.
+             * @param v this is the View(Built in) class object
+             */
             public void onClick(View v) {
                 Intent intent = new Intent(LoseWeightPlan.this,Day15.class);
                 startActivity(intent);

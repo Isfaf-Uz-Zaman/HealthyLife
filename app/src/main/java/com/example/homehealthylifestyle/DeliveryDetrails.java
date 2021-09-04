@@ -1,4 +1,4 @@
-package Model;
+package com.example.homehealthylifestyle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,8 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.homehealthylifestyle.R;
-import com.example.homehealthylifestyle.ThankYouForOrdering;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
@@ -20,16 +18,35 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * This class will take all the data provided by user in store and save it in firestore database.
+ *  @author Isfaf Uz Zaman,CSE327 project documentation
+ */
 public class DeliveryDetrails extends AppCompatActivity{
-
+    /**
+     * This textview is used to get customer name
+     */
     private TextView customerName;
-    private EditText customerAddress;
-    private EditText customerPhone;
+    /**
+     * This edit text is used to get customer address and phone number
+     */
+    private EditText customerAddress,customerPhone;
+    /**
+     * This button is used to get customer order confirmation
+     */
     private Button orderDone;
+    /**
+     * This string is used to show customer what he ordered
+     */
     public String youHaveOrdered;
+    /**
+     * This is used to connect the app in fire store.
+     */
     FirebaseFirestore dataBase;
 
+    /**
+     * This method is used for making connection between front end and back end.
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +65,14 @@ public class DeliveryDetrails extends AppCompatActivity{
         }
 
 
+
         orderDone.setOnClickListener(new View.OnClickListener() {
+            /**
+             * When customer clicks on Order done it will redirect to database
+             */
             @Override
             public void onClick(View v) {
+
                 saveData();
 
             }
@@ -63,13 +85,9 @@ public class DeliveryDetrails extends AppCompatActivity{
     }
 
 
-    /*
-    *This method is used to store data in firebase
-    *
-    * */
-    
-
-
+    /**
+     * This method is used for taking all the data related to cutomer order and save directly to database.
+     */
     private void saveData() {
 
         String name = customerName.getText().toString().trim();
@@ -86,8 +104,12 @@ public class DeliveryDetrails extends AppCompatActivity{
         dataBase.collection("OrderDetails")
                 .add(items)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    /**
+                     * This will give a toast message when order is success.
+                     */
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
+
                         Toast.makeText(DeliveryDetrails.this,"Successful",Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(DeliveryDetrails.this, ThankYouForOrdering.class);
                         startActivity(intent);
@@ -95,6 +117,9 @@ public class DeliveryDetrails extends AppCompatActivity{
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
+                    /**
+                     * This will give a toast message when order is failed.
+                     */
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(DeliveryDetrails.this,"Failed",Toast.LENGTH_LONG).show();

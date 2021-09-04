@@ -8,13 +8,27 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import Model.DeliveryDetrails;
+/**
+ * This class represents the checkout page logic.
+ *  @author Isfaf Uz Zaman,CSE327 project documentation
+ */
 
 public class CheckoutPage extends AppCompatActivity {
-
+    /**
+     * This will give a text view of customers order in checkout page order confirmation.
+     */
     private TextView orderConfirm;
+    /**
+     * This button will let of customers  order confirmation if everything is ok.
+     */
     private Button confirmButton;
+    /**
+     * This string will keep the data what customer ordered and pass it to next page.
+     */
     private String totalOrder;
+    /**
+     * This method is used for making connection between front end and back end.
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +53,11 @@ public class CheckoutPage extends AppCompatActivity {
         }
 
         confirmButton.setOnClickListener(new View.OnClickListener() {
+            /**
+             * This button will work as transaction between checkout page to delivery details.
+             */
             @Override
+
             public void onClick(View v) {
                 Intent i = new Intent(CheckoutPage.this, DeliveryDetrails.class);
                 i.putExtra("Order",totalOrder);
