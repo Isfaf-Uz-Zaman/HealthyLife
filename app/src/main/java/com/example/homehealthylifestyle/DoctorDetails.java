@@ -12,8 +12,18 @@ import android.widget.TextView;
  */
 
 public class DoctorDetails extends AppCompatActivity {
+    /**
+     * This is an imageview for the Doctors image.
+     */
     ImageView imageView;
+    /**
+     * These are the textviews for doctors name and specialty
+     */
     TextView textView, textView2;
+    /**
+     * This is where the code will find the xml layout by finding the id.
+     * @param savedInstanceState Bundle class Object which helps to save the state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
