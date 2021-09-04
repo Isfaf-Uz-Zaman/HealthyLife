@@ -4,8 +4,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
+/**
+ * Unit Testing class
+ * @author Md.Tansin Ullah Nabil, CSE327 Project Documentaion.
+ */
 public class SetGoalTest {
-
+    /**
+     * Test Case 1 when user gives a valid input.
+     */
     @Test
     public void TestCase1() {
         float input = 1000;
@@ -19,6 +25,9 @@ public class SetGoalTest {
 
     }
 
+    /**
+     * Test Case 2 when the user give zero as input.
+     */
     @Test
     public void TestCase2() {
         float input = 0;
@@ -32,6 +41,9 @@ public class SetGoalTest {
 
     }
 
+    /**
+     * Test Case 3 When user gives invalid input (less than zero).
+     */
     @Test
     public void TestCase3() {
         float input = -1;

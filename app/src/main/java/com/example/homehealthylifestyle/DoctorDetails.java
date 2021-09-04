@@ -5,6 +5,12 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ * This class is for Doctor Details <br/>
+ * Just to find the image specialty and details from xml layout.
+ * @author Md.Tansin Ullah Nabil, CSE327 Project Documentation <br/>
+ */
+
 public class DoctorDetails extends AppCompatActivity {
     ImageView imageView;
     TextView textView, textView2;

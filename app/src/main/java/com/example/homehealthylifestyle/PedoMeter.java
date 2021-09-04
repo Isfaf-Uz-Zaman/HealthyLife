@@ -13,15 +13,42 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * This class represents the coding for Start and stop time <br/> according to Step counting.
+ * @author Md.Tansin Ullah Nabil, CSE327 Project Documentation.
+ */
 
 public class PedoMeter extends AppCompatActivity {
 
+    /**
+     * TextView for counting the timer which uses timerText variable
+     */
     TextView timerText;
+    /**
+     * A button for Start and Stop
+     */
     Button startStopButton;
+    /**
+     * timer variable for counting time.
+     */
     Timer timer;
+    /**
+     * Completing timer task the timerTask variable will help.
+     */
     TimerTask timerTask;
+    /**
+     * time variable is initialized to zero as the time will start from zero.
+     */
     double time = 0.0;
+    /**
+     * A boolean variable to make the time stop from the initialization state
+     */
     boolean timerStarted = false;
+
+    /**
+     * This is where the code will find the xml layout by finding the id.
+     * @param savedInstanceState Bundle class Object which helps to save the state.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +60,22 @@ public class PedoMeter extends AppCompatActivity {
     }
 
 
+    /**
+     * This method is for Reset buttons Alert Dialog
+     * @param view this object will show the alert dialog box
+     */
     public void resetTapped(View view) {
         AlertDialog.Builder resetAlert = new AlertDialog.Builder(this);
         resetAlert.setTitle("Reset Timer");
         resetAlert.setMessage("Are you sure you want to reset the Steps?");
         resetAlert.setPositiveButton("Reset", new DialogInterface.OnClickListener() {
+            /**
+             * This method of alert dialog will call after tapping the reset button <br/>
+             * And show the cancel button. <br/>
+             * and timer sets to minimal which is zero.
+             * @param dialogInterface this object uses for Showing the dialogue
+             * @param i An integer variable.
+             */
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
 
@@ -61,6 +99,12 @@ public class PedoMeter extends AppCompatActivity {
         resetAlert.show();
     }
 
+    /**
+     * <p>This method is for Start button</p> <br/>
+     * After tapping the start button it will set the text to stop <br/>
+     * so that it can be pressed as stop button
+     * @param view View class object
+     */
     public void startStopTapped(View view) {
         if (timerStarted==false){
             timerStarted=true;
@@ -76,6 +120,10 @@ public class PedoMeter extends AppCompatActivity {
         }
     }
 
+    /**
+     * <p>This method is Timer starting thread.</p> <br/>
+     * It will increment the time to the textView of xml layout.
+     */
     private void startTimer()
     {
         timerTask = new TimerTask() {
@@ -96,6 +144,11 @@ public class PedoMeter extends AppCompatActivity {
 
         timer.scheduleAtFixedRate(timerTask, 0 ,1000);
     }
+
+    /**
+     * This method is for the mathematical term of the time
+     * @return it returns the time format.
+     */
     private String getTimerText() {
         int rounded = (int) Math.round(time);
         int seconds = ((rounded % 86400) % 3600) % 60;
@@ -104,6 +157,14 @@ public class PedoMeter extends AppCompatActivity {
 
         return formatTime(seconds,minutes,hours);
     }
+
+    /**
+     * This formatTime method catches the return from getTimerText method.
+     * @param seconds For getting the seconds as input.
+     * @param minutes For getting the minutes as input.
+     * @param hours For getting the hours as input.
+     * @return this returns the seconds.
+     */
 
     private String formatTime(int seconds, int minutes, int hours) {
         return String.format("%d",seconds);
