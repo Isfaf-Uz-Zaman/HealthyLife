@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import Model.DeliveryDetrails;
+
 /**
  * This class represents the checkout page logic.
  *  @author Isfaf Uz Zaman,CSE327 project documentation
